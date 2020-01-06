@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<!-- Copyright 2015 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<head>
+	<meta charset="utf-8">
+	<title>百度一下</title>	
+	<style>
+	
+	.searchbar {     
+		border: rgb(120, 120, 120) solid 2px;
+		border-radius: 2em;    /*左右边框为半圆*/
+		width: 552px;
+		height: 42px;
+		box-shadow: 0px 5px 5px rgb(212, 212, 212);
+		margin: 0 auto;  /*重要！整个搜索框居中对齐*/
+		padding: 4px;
+		margin-top: 300px;	
+	}
+	#search,#button{ 
+		height: 40px;
+		border:none;    /*取消默认的边框以设置自定义边框*/
+		outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+		font-size: 12x;        
+		vertical-align: middle;
+		/*background: #000000*/
+		background-color:transparent;/*搜索框与搜索按钮透明*/
+	}
+	#search{
+		width: 475px;
+		margin-left: 10px;
+		font: bolder;
+		font-size: 20px;
+		color: rgb(240, 0, 0);
+	}
+	#button{
+		width: 0px;
+		margin-right: 0px;
+	}
+	.s{
+		width: 530px;
+		height: 40px;
+	}
+
+	</style>
+</head>
+	
+<body>
+	<div class="searchbar">
+		<form action="https://www.baidu.com/baidu?ie=utf-8" target="blank">
+		    <div class="s">
+		        <input id="search" type="text" placeholder="" autocomplete="off" name="word">
+		        <button id="button"></button>
+		     </div>
+		</form>
+	</div>
+</body>
+	
+	
+</html>
